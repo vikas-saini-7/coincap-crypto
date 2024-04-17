@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Unbounded:wght@200..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+$gradient : linear-gradient(319deg, #ffcb43 0%, #ff6425 37%, #ff0016 100%);
+
+
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    background-color: rgb(20, 13, 13);
+    color: white;
+}
+
+.font-primary{
+    font-family: "Unbounded", sans-serif;
+}
+
+.gradient-bg{
+    background-color: #ffcb43;
+    background-image: $gradient;
+}
+.gradient-text {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn{
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.100);
+}
+.h-hero{
+    height: calc( 100vh - 72px );
+}
+
+
+// scrollbar 
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #907878; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #322626; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #251c1c; 
+  }
