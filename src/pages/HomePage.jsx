@@ -15,9 +15,9 @@ const HomePage = () => {
     const coinsData = useSelector(state => state?.coin?.coinsData);
     const loading = useSelector(state => state?.coin?.loading);
       
-    // useEffect(() => {
-    //   dispatch(getTopCoins(currentPage));
-    // }, [currentPage, dispatch]);
+    useEffect(() => {
+      dispatch(getTopCoins(currentPage));
+    }, [currentPage, dispatch]);
 
     const handlePageChange = page => {
       setCurrentPage(page);
