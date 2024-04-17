@@ -7,20 +7,10 @@ const Header = () => {
 
     function handleDrawerOpen(){
         setDrawerOpen(true)
-        // if (!drawerOpen) {
-        // document.body.classList.add('overflow-hidden');
-        // } else {
-        // document.body.classList.remove('overflow-hidden');
-        // }
     }
 
     function handleDrawerClose(){
         setDrawerOpen(false)
-        // if (!drawerOpen) {
-        // document.body.classList.add('overflow-hidden');
-        // } else {
-        // document.body.classList.remove('overflow-hidden');
-        // }
     }
 
     return (
