@@ -6,6 +6,8 @@ import { getTopCoins } from '../redux/actions/coinActions'
 import CryptoTable from '../components/home/CryptoTable'
 import TablePagination from '../components/home/TablePagination'
 import AiAssistantSection from '../components/home/AiAssistantSection'
+import AccordionSection from '../components/home/AccordionSection'
+import Footer from '../components/common/Footer'
 const HomePage = () => {
 
     const [currentPage, setCurrentPage] = useState(1);
@@ -37,6 +39,8 @@ const HomePage = () => {
           }
           <div className='h-[120px]'></div>
           <AiAssistantSection/>
+          <div className='h-[120px]'></div>
+          <AccordionSection/>
           <div className='h-[120px]'></div>
       </div>
     )
